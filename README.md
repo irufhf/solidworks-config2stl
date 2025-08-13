@@ -21,10 +21,10 @@ It is designed for users who manage multiple configurations (e.g., via Design Ta
 ---
 
 ## Installation
-1. Download the `.swp` macro file from this repository.
+1. Download the `config2stl.swp` macro file from this repository.
 2. Open SolidWorks and your part/assembly file.
 3. Go to **Tools → Macro → Run...**
-4. Select the downloaded `.swp` file and click **Open**.
+4. Select the downloaded `config2stl.swp` file and click **Open**.
 
 ---
 
@@ -45,3 +45,19 @@ It is designed for users who manage multiple configurations (e.g., via Design Ta
 - **Output folder name:** Change the `OUTPUT_SUBFOLDER` constant in the macro code.
 - **Assembly export mode:** Macro currently exports assemblies as a single STL; this can be modified if needed.
 - **Filename sanitization:** The macro replaces invalid filename characters with underscores.
+
+---
+
+## Example
+If your file is located at:
+```text
+C:\Projects\MyPart.SLDPRT
+```
+
+After running the macro, you’ll get:
+```text
+C:\Projects\STL_Exports\
+    Config1.stl
+    Config2.stl
+    Config3.stl
+```
